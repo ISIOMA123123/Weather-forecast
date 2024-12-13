@@ -1,0 +1,15 @@
+body{
+    background-color: #f9f7fe;
+   font-family: "Roboto", sans-serif;
+         
+}
+
+.myweather{
+    background: white;
+    max-width: 600px;
+    margin: 45px auto;
+    box-shadow: 0 20px 10px rgba(65, 50, 100, 0.08);
+    border-radius: 16px;
+    padding: 30px;
+
+}
