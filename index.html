@@ -14,21 +14,29 @@
 <body>
     <div class="myweather">
   <header>
-    <form>
-        <input type="search" placeholder="Enter a city..." required>
-        <input type="submit" value="search">
+    <form class="searchForm">
+        <input type="search" placeholder="Enter a city..." required class="searchForm-input">
+        <input type="submit" value="search" class="searchForm-Press">
     </form>
   </header>
   <main>
+    <div class="weather-information">
     <div>
-    <h1>Paris</h1>
-    <p>Tuesday 24:24, scattered clouds
-        <br>humidity: 66%, wind: 3.13km/h 
+    <h1 class="weatherApp-city">Paris</h1>
+    <p class="weatherApp-time">
+      <span class="weatherApp-timeNow">Tuesday 24:24</span>, scattered clouds
+        <br>humidity: <strong>66%</strong>, wind: <strong>3.13km/h</strong> 
     </p>
    </div>
-    <div>⛅ 12&deg;C</div>
+    <div class="temperature-Degree">
+      <span class="temperature-Degree-Icon">⛅</span>
+       <span class="temperature-Degree-Value">12</span>
+       <span class="temperature-Degree-Unit">&deg;C</span></div>
+</div>
   </main>
-  <footer>coded by <a href="https://github.com/ISIOMA123123" target="_blank">ubani success isioma</a> and its open sourced on <a href="https://github.com/" target="_blank">github</a> and website hosted on <a href="https://www.netlify.com/" target="_blank">netlify</a></footer>
+  <footer>
+    <p>coded by <a href="https://github.com/ISIOMA123123" target="_blank">ubani success isioma</a> and its open sourced on <a href="https://github.com/" target="_blank">github</a> and website hosted on <a href="https://www.netlify.com/" target="_blank">netlify</a>
+  </p></footer>
 </div>
 </body>
 </html>
