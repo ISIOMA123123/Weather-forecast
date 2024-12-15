@@ -14,15 +14,15 @@
 <body>
     <div class="myweather">
   <header>
-    <form class="searchForm">
-        <input type="search" placeholder="Enter a city..." required class="searchForm-input">
+    <form class="searchForm" id="seachForm-identity">
+        <input type="search" placeholder="Enter a city..." required class="searchForm-input" id="searchFormInputes">
         <input type="submit" value="search" class="searchForm-Press">
     </form>
   </header>
   <main>
     <div class="weather-information">
     <div>
-    <h1 class="weatherApp-city">Paris</h1>
+    <h1 class="weatherApp-city" id="cityElement">Paris</h1>
     <p class="weatherApp-time">
       <span class="weatherApp-timeNow">Tuesday 24:24</span>, scattered clouds
         <br>humidity: <strong>66%</strong>, wind: <strong>3.13km/h</strong> 
@@ -38,5 +38,6 @@
     <p>coded by <a href="https://github.com/ISIOMA123123" target="_blank">ubani success isioma</a> and its open sourced on <a href="https://github.com/" target="_blank">github</a> and website hosted on <a href="https://www.netlify.com/" target="_blank">netlify</a>
   </p></footer>
 </div>
+<script src="index.js"></script>
 </body>
 </html>
