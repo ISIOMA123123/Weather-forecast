@@ -33,8 +33,8 @@ console.log(humidityNow);
 windNow = response.data.wind.speed;
 console.log(windNow);
 
-timeNow = new Date(response.data.time * 1000);
-console.log(timeNow);
+date = new Date(response.data.time * 1000);
+console.log(date);
 
  presentTemperature = document.querySelector("#temperatureValuenow");
  console.log(presentTemperature);
@@ -48,13 +48,13 @@ console.log(timeNow);
 
  humidityResultnow = document.querySelector("#humidityResult");
  console.log(humidityResultnow);
- humidityResultnow.innerHTML = humidityNow;
+ humidityResultnow.innerHTML = `${humidityNow}%`;
 
  windDescriptionNow = document.querySelector("#windDescription");
  windDescriptionNow.innerHTML =  `${windNow}km/hr`
 
  timeDescriptionNow = document.querySelector("#weatherTimeNow");
- timeDescriptionNow.innerHTML = timeNow;
+ timeDescriptionNow.innerHTML = `${date.getDay} `
 });
 
 
