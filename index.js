@@ -35,7 +35,7 @@ function formatDate(date) {
    hours = date.getHours();
    minutes = date.getMinutes();
 
-   days = ["Sunday", "Tuesday", "Wednessday", "Thursday", "Friday", "Saturday"];
+   days = ["Sunday", "Monday", "Tuesday", "Wednessday", "Thursday", "Friday", "Saturday"];
 day = days[date.getDay()];
 
 if (minutes < 10) {
