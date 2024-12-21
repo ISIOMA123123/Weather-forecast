@@ -1,44 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="srces/index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet">
-      <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
-    <title>weather app</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="srces/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+  <title>weather app</title>
 </head>
+
 <body>
-    <div class="myweather">
-  <header>
-    <form class="searchForm" id="seachForm-identity">
+  <div class="myweather">
+    <header>
+      <form class="searchForm" id="seachForm-identity">
         <input type="search" placeholder="Enter a city..." required class="searchForm-input" id="searchFormInputes">
         <input type="submit" value="search" class="searchForm-Press">
-    </form>
-  </header>
-  <main>
-    <div class="weather-information">
-    <div>
-    <h1 class="weatherApp-city" id="cityElement"></h1>
-    <p class="weatherApp-time">
-      <span class="weatherApp-timeNow" id="weatherTimeNow">Tuesday 24:24</span>, <span id="weatherDescription">scattered clouds</span>
-        <br>humidity: <strong id="humidityResult">66%</strong>, wind: <strong id="windDescription">3.13km/h</strong> 
-    </p>
-   </div>
-    <div class="temperature-Degree">
-      <span class="temperature-Degree-Icon">⛅</span>
-       <span class="temperature-Degree-Value" id="temperatureValuenow"></span>
-       <span class="temperature-Degree-Unit">&deg;C</span></div>
-</div>
-  </main>
-  <footer>
-    <p>coded by <a href="https://github.com/ISIOMA123123" target="_blank">ubani success isioma</a> and its open sourced on <a href="https://github.com/" target="_blank">github</a> and website hosted on <a href="https://www.netlify.com/" target="_blank">netlify</a>
-  </p></footer>
-</div>
-<script src="index.js"></script>
+      </form>
+    </header>
+    <main>
+      <div class="weather-information">
+        <div>
+          <h1 class="weatherApp-city" id="cityElement"></h1>
+          <p class="weatherApp-time">
+            <span class="weatherApp-timeNow" id="weatherTimeNow">Tuesday 24:24</span>,
+            <span id="weatherDescription"></span>
+            <br>humidity: <strong id="humidityResult"></strong>, wind: <strong id="windDescription"></strong>
+          </p>
+        </div>
+        <div class="temperature-Degree">
+          <div id="iconTemperature">
+
+          </div>
+          <span class="temperature-Degree-Value" id="temperatureValuenow"></span>
+          <span class="temperature-Degree-Unit">&deg;C</span>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>coded by <a href="https://github.com/ISIOMA123123" target="_blank">ubani success isioma</a> and its open
+        sourced on <a href="https://github.com/" target="_blank">github</a> and website hosted on <a
+          href="https://www.netlify.com/" target="_blank">netlify</a>
+      </p>
+    </footer>
+  </div>
+  <script src="index.js"></script>
 </body>
+
 </html>
