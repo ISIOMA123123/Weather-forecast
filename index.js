@@ -121,6 +121,6 @@ searchFormElement = document.querySelector("#seachForm-identity");
 console.log(searchFormElement);
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
-searchCity("Paris");
+searchCity("Sydney");
 
 
